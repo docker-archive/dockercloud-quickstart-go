@@ -1,0 +1,8 @@
+web:
+  image: dockercloud/quickstart-go
+  links:
+    - mongo
+  ports:
+    - "80"
+mongo:
+  image: mongo
